@@ -1,8 +1,11 @@
 {
+  "name": "deno-relay",
+  "version": "1.0.0",
   "tasks": {
-    "dev": "deno run --watch --allow-read --allow-net main.ts"
+    "dev": "deno serve --allow-net --allow-env main.ts",
+    "deploy": "deno deploy"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert@1"
+    "@std/encoding": "jsr:@std/encoding@1"
   }
 }
